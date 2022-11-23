@@ -17,7 +17,7 @@ This folder contains a Postman Collection that contains the requests cover the c
 [![https://youtu.be/UCRWpUwLifo](http://img.youtube.com/vi/UCRWpUwLifo/0.jpg)](https://youtu.be/UCRWpUwLifo "BIM 360 Cost Management tutorial")
 
 ## Preparation before you begin:
-- [Create Forge App, get access to a BIM 360 Account](https://forge.autodesk.com/en/docs/bim360/v1/tutorials/getting-started/get-access-to-account/)
+- [Create APS App, get access to a BIM 360 Account](https://forge.autodesk.com/en/docs/bim360/v1/tutorials/getting-started/get-access-to-account/)
 - [Create BIM360 project, activate Cost Management module, setup project for Cost Management](https://help.autodesk.com/view/BIM360D/ENU/?guid=BIM360D_Cost_Management_getting_started_with_cost_management_html);
 
 ## Instructions to run the Postman tutorial are as below:
@@ -26,8 +26,8 @@ This folder contains a Postman Collection that contains the requests cover the c
 
 ### Setup Postman environment and Authorization:
 - Import Postman environment & collection, please setup the following environment vialables, 
-    - client_id:     Forge App Id.
-    - client_secret: Forge App Secrect. 
+    - client_id:     APS App Id.
+    - client_secret: APS App Secrect. 
 
 - Please add the Authorization for the collection, click **Edit Collection**, go to **Authorization** tab, make sure to use **OAuth 2.0** to get a 3 legged token, use it in the **Request Headers**.
 ![3leggedToken](Img/3leggedToken.png)
@@ -87,4 +87,4 @@ Until now, you should have successfully created a change order with right status
 This sample is licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 
 ## Written by
-Zhong Wu [@johnonsoftware](https://twitter.com/johnonsoftware), [Forge Partner Development](http://forge.autodesk.com)
+Zhong Wu [@johnonsoftware](https://twitter.com/johnonsoftware), [APS Partner Development](http://forge.autodesk.com)
