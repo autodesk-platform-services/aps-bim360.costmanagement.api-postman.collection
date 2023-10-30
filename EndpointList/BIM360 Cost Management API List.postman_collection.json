@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "65c54e71-4761-4f3c-b654-a9d2a93d6c70",
+		"_postman_id": "5a0dbe1a-5f2d-4fd1-b67e-85d0c5aa0165",
 		"name": "BIM360 Cost Management API List",
 		"description": "The collection together with the environment shows the whole list of the Endpoints which is released at 2020-01-17 as public beta.\n\nYou can refer to the https://forge.autodesk.com/en/docs/bim360/v1/overview/basics/ for the details about all these APIs.",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "942004"
 	},
 	"item": [
 		{
@@ -15,7 +16,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0400edee-9407-4539-a629-7f92f73ce24e",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -58,7 +58,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "511e384b-691e-40a2-9fe5-716e82dd7274",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -80,7 +79,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "d0cd5145-8f97-47aa-a136-0c42d2309e11",
 								"exec": [
 									"pm.environment.set(\"project_name\", \"change to your project name\");"
 								],
@@ -113,7 +111,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "25d5a645-4c36-4dd6-82a9-3c26136f9985",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -151,7 +148,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "70d36364-ec62-4920-9414-a295572f4209",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -161,15 +157,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c97b5588-a555-4202-944f-74e9c2885266",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Budgets",
@@ -180,7 +174,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ca31f576-be8a-4184-aa61-c0a1c63ca056",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -253,7 +246,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "750c4dfb-c950-4f16-99a0-c8bc8cb53064",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -274,7 +266,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/budgets/{{budget_id}}?",
+							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/budgets/{{budget_id}}",
 							"host": [
 								"{{base_domain}}cost"
 							],
@@ -308,7 +300,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7a71f75b-3983-4d4b-9698-b717db5e8353",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -355,7 +346,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "46ec695e-7cdf-42c4-b69d-678f48fc65c7",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -410,7 +400,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "764a55a6-02f5-4374-8307-c19818bdb1ba",
 								"exec": [
 									"pm.test(\"Status code is 204\", function () {",
 									"    pm.response.to.have.status(204);",
@@ -450,7 +439,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e3f15d13-d21d-4cc4-b166-1ab8be3e07f1",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -504,7 +492,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0fca396e-b28b-4c88-bf29-4321b8341e66",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -514,15 +501,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "615c270f-22ba-4381-9314-ffeb7a45d1ed",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Contracts",
@@ -533,7 +518,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cfca5644-3012-4e47-af4d-9e20bf186a36",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -558,7 +542,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/contracts?",
+							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/contracts",
 							"host": [
 								"{{base_domain}}cost"
 							],
@@ -586,7 +570,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cfca5644-3012-4e47-af4d-9e20bf186a36",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -629,7 +612,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cfca5644-3012-4e47-af4d-9e20bf186a36",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -641,7 +623,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7e275243-a3b5-4484-862d-d6be21bd0d00",
 								"exec": [
 									"pm.environment.set(\"company_id\", \"change to your company id\");",
 									"pm.environment.set(\"user_id\", \"change to your use id\");"
@@ -686,7 +667,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cfca5644-3012-4e47-af4d-9e20bf186a36",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -735,7 +715,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cfca5644-3012-4e47-af4d-9e20bf186a36",
 								"exec": [
 									"pm.test(\"Status code is 204\", function () {",
 									"    pm.response.to.have.status(204);",
@@ -769,8 +748,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Change Orders",
@@ -781,7 +759,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7d16a9a4-c870-4cb6-9a45-f2c83c9916fd",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -828,7 +805,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8d6d7bb5-1d9d-444c-bb67-a61ad8228445",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -853,7 +829,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/change-orders/{{changeOrder_type}}?",
+							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/change-orders/{{changeOrder_type}}",
 							"host": [
 								"{{base_domain}}cost"
 							],
@@ -881,7 +857,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fe4fb402-de8b-4fbc-ba03-71234776a73b",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -925,7 +900,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e15aa082-d4a9-4766-bb4b-a1e4a12a172c",
 								"exec": [
 									"pm.environment.set(\"recipient_id\", \"change to user id\");"
 								],
@@ -935,7 +909,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "21d4043f-733e-4959-a661-b152be7706e9",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -982,7 +955,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -1033,7 +1005,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "959cdd5f-bf9c-4b85-84cc-87b7b757c601",
 								"exec": [
 									"pm.test(\"Status code is 204\", function () {",
 									"    pm.response.to.have.status(204);",
@@ -1068,8 +1039,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Cost Items",
@@ -1080,7 +1050,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1105,7 +1074,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/cost-items?",
+							"raw": "{{base_domain}}cost/v1/containers/{{cost_container_id}}/cost-items",
 							"host": [
 								"{{base_domain}}cost"
 							],
@@ -1133,7 +1102,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1182,7 +1150,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1229,7 +1196,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -1279,7 +1245,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 204\", function () {",
 									"    pm.response.to.have.status(204);",
@@ -1313,8 +1278,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Change Order and Cost Item",
@@ -1325,7 +1289,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1371,7 +1334,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1411,8 +1373,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Attachment",
@@ -1423,7 +1384,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -1439,7 +1399,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7e0ba9a7-d18e-40e9-98e8-4af40c90e575",
 								"exec": [
 									"pm.environment.set(\"association_type\", \"change to your association type\");",
 									"pm.environment.set(\"association_type\", \"change to your association id\");"
@@ -1484,7 +1443,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
@@ -1500,7 +1458,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "66e88806-7c0c-4c87-83d4-b64999c51042",
 								"exec": [
 									"pm.environment.set(\"attachment_urn\", \"change to your attachment urn\");",
 									"pm.environment.set(\"association_type\", \"change to your association type\");",
@@ -1546,7 +1503,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1614,7 +1570,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 204\", function () {",
 									"    pm.response.to.have.status(204);",
@@ -1658,8 +1613,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Attribute Definitions",
@@ -1670,7 +1624,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1686,7 +1639,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1efb7b78-9a9f-4e74-9465-8deeaabdcfa2",
 								"exec": [
 									"pm.environment.set(\"association_type\", \"change to your association type\");"
 								],
@@ -1731,8 +1683,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Attribute Values",
@@ -1743,7 +1694,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1755,7 +1705,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e0822579-6c94-49bb-9f92-ea0b6dbde2ae",
 								"exec": [
 									"pm.environment.set(\"property_value\", \"change to your property value\");"
 								],
@@ -1802,7 +1751,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "1a5116a8-8c27-457f-8136-77929e2ee339",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1812,15 +1760,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "1b18ed42-ac67-423a-98ee-7d3590d7b4b0",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Document",
@@ -1831,7 +1777,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1847,7 +1792,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "94535971-fb94-4a0e-baa4-705b8a212949",
 								"exec": [
 									"pm.environment.set(\"association_type\", \"change to your association type\");"
 								],
@@ -1891,8 +1835,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Actions",
@@ -1903,7 +1846,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1953,7 +1895,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3a9e2af-0bc3-4d81-9bc4-9f4fa42fc1fe",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1966,7 +1907,6 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "47c330ee-ed27-4a44-a4aa-764be9bb9c27",
 								"exec": [
 									"pm.environment.set(\"association_type\", \"change to your association type\");",
 									"pm.environment.set(\"association_id\", \"change to your association id\");"
@@ -2006,13 +1946,82 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
 	],
 	"auth": {
 		"type": "oauth2",
 		"oauth2": [
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://developer.api.autodesk.com/authentication/v2/token",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://developer.api.autodesk.com/authentication/v2/authorize",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://www.getpostman.com/oauth2/callback",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenName",
+				"value": "3LO",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "bucket:create bucket:read data:read data:create data:write data:search",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
 			{
 				"key": "accessToken",
 				"value": "",
@@ -2022,11 +2031,6 @@
 				"key": "tokenType",
 				"value": "Bearer",
 				"type": "string"
-			},
-			{
-				"key": "addTokenTo",
-				"value": "header",
-				"type": "string"
 			}
 		]
 	},
@@ -2034,7 +2038,6 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6461e641-e785-4fdb-9a0a-3657670dfef1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2044,13 +2047,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "3d21282b-9014-4f97-84d5-566c463eb454",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
